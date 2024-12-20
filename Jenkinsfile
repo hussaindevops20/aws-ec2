@@ -15,16 +15,17 @@ pipeline {
             steps {
                                    sh 'terraform apply --auto-approve'
                   }
-    }
-    post {
-        always {
-            // Cleanup or notifications
-            echo "Pipeline finished"
-        }
-        failure {
-            // Handle failure
-            echo "Pipeline failed"
-        }
+        post {
+             always {
+                    // Cleanup or notifications
+                    echo "Pipeline finished"
+                    }
+             failure {
+                    // Handle failure
+                   echo "Pipeline failed"
+                    }
+             }
+        }        
     }
 }
 }    
