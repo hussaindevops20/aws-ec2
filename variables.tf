@@ -1,12 +1,12 @@
 variable "ami_value" {
-    description = "value for the ami"
+    description = "ami-06b21ccaeff8cd686"
 }
 
 variable "instance_type_value" {
-    description = "value for instance_type"
+    description = "t2.micro"
 }
 
 variable "region_value" {
-    description ="value for region"
+    description ="us-east-1"
 }
 
