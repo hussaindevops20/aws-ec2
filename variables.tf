@@ -9,4 +9,11 @@ variable "instance_type_value" {
 variable "region_value" {
     default ="us-east-1"
 }
+variable "bucket" {
+    default = "bucketsadiq-1"
+}
+variable "dynamo" {
+    default = "table-1"
+
+}
 
