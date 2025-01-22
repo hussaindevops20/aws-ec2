@@ -3,6 +3,6 @@ terraform {
     bucket = var.bucket
     key    = "terraform.tfstate"
     dynamodb_table = var.dynamo
-    region = var.region_value
+    region = "us-east-1"
   }
 }
